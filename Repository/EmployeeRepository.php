@@ -16,7 +16,7 @@
 		 */
 		public function __construct() 
 		{
-			$this->dbHelper = new HelperDb('localhost', 'root', 'root', 'classicmodels');
+			$this->dbHelper = HelperDb::getInstance('mysql');
 		}
 
 		/**
